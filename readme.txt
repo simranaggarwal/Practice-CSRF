@@ -36,7 +36,7 @@ Getting Started
 				</dd>
 		</dl>
 		<dl>
-			<dt>
+			<dt> 
 				Retype New Password
 			</dt>
 				<dd>
